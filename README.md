@@ -7,7 +7,7 @@ RTT signal strength measurements (RSSI in dBm) collected across multiple locatio
 
 ## Pipeline
 1. Load and preprocess RTT data
-2. Feature selection using `SelectKBest` with `f_classif` (top 5 features)
+2. Feature selection using `SelectKBest` with `f_classif` (top 100 features)
 3. Classification using `KNeighborsClassifier` (k=5)
 4. Evaluation with Stratified K-Fold cross-validation (5 splits)
 
